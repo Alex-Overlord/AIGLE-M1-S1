@@ -1,4 +1,4 @@
-id_billet,nom,nb_jours,nb_parcs,tarif_adulte
+id_billet,nom,nb_jours,nb_parcs,tarif
 b1,Ancien Billet MINI,1,1,59.00
 b2,Ancien Billet MINI,1,2,79.00
 b3,Ancien Billet Magic,1,1,79.00

@@ -1,15 +1,15 @@
-"id_billet,nom,nb_jours,nb_parcs,tarif_enfant,tarif_adulte"
-"1,Ancien Billet MINI,1,1,54.00,59.00"
-"2,Ancien Billet MINI,1,2,74.00,79.00"
-"3,Ancien Billet Magic,1,1,73.00,79.00"
-"4,Ancien Billet Magic,1,2,93.00,99.00"
-"5,Ancien Billet SUPER MAGIC,1,1,82.00,89.00"
-"6,Ancien Billet SUPER MAGIC,1,2,102.00,109.00"
-"7,Billet Guichet,1,1,80.00,87.00"
-"8,Billet Guichet,1,1,100.00,107.00"
-"9,Billet SUPER MAGIC PLUS,1,2,79.00,89.00"
-"10,Ticket Jour J,2,2,79.00,89.00"
-"11,Ticket Jour J,3,2,82.00,102.00"
-"12,Billet sejour,4,2,165.00,179.00"
-"13,Billet sejour,1,1,201.00,219.00"
-"14,Billet sejour,1,1,238.00,259.00"
+id_billet,nom,nb_jours,nb_parcs,tarif_adulte
+b1,Ancien Billet MINI,1,1,59.00
+b2,Ancien Billet MINI,1,2,79.00
+b3,Ancien Billet Magic,1,1,79.00
+b4,Ancien Billet Magic,1,2,99.00
+b5,Ancien Billet SUPER MAGIC,1,1,89.00
+b6,Ancien Billet SUPER MAGIC,1,2,109.00
+b7,Billet Guichet,1,1,87.00
+b8,Billet Guichet,1,1,107.00
+b9,Billet SUPER MAGIC PLUS,1,2,89.00
+b10,Ticket Jour J,2,2,89.00
+b11,Ticket Jour J,3,2,102.00
+b12,Billet sejour,4,2,179.00
+b13,Billet sejour,1,1,219.00
+b14,Billet sejour,1,1,259.00

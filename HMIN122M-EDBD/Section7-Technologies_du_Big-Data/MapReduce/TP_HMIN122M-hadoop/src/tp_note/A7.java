@@ -87,7 +87,20 @@ public class A7 {
 		}
 	}
 	
+	public static ArrayList<String> partitionnement(String key, int taille){
+		ArrayList<String> tab = new ArrayList<String>();
+		for (int i = 1; i <= taille; i++) {
+			tab.add(key + String.valueOf(i));
+		}
+		return tab;
+	}
+	
 	// Mapper A
+	/*
+		Acteur : emit(ida, gender)
+		Role : emit (idr, nom)
+		Cachets : emit(ida+idr, montant)
+	*/
 	public static class Map extends Mapper<LongWritable, Text, Text, Text> {
 		private final static String emptyWords[] = { "" };
 
@@ -101,51 +114,62 @@ public class A7 {
 				return;
 
 			if (compt != 1) {
-				if (words[0].charAt(0) == 's') {
-					String Sal_id_employe = words[0].substring(1);
-					String Sal_montant = words[4];
-					LOG.info(Sal_id_employe+"Sal"+Sal_montant);
-					context.write(new Text(Sal_id_employe), new Text("Sal"+Sal_montant));
-				} else if (words[0].charAt(0) == 'e' && words[3].equals("Female")) {
-					String Emp_id_employe = words[0].substring(1);
-					String Emp_first_name = words[1];
-					String Emp_last_name = words[2];
-					String Emp_age = words[4];
-					String Emp_pays = words[5];
-					LOG.info(Emp_id_employe+"Emp"+Emp_first_name+";"+Emp_last_name+";"+Emp_age+";"+Emp_pays);
-					context.write(new Text(Emp_id_employe), new Text("Emp"+Emp_first_name+";"+Emp_last_name+";"+Emp_age+";"+Emp_pays));
+				if (words[0].charAt(0) == 'e') { // Acteur
+					String Act_ida = words[0];
+					String Act_gender = words[3];
+					for (String rol : partitionnement("m", 10)) {
+						LOG.info(Act_ida+" "+rol+" "+Act_gender);
+						context.write(new Text(Act_ida+" "+rol), new Text("Act"+Act_gender));
+					}
+				} else if (words[0].charAt(0) == 'm') { // Role
+					String Rol_idr = words[0];
+					String Rol_nom = words[1];
+					for (String act : partitionnement("e", 500)) {
+						LOG.info(act+" "+Rol_idr+" "+Rol_nom);
+						context.write(new Text(act+" "+Rol_idr), new Text("Rol"+Rol_nom));
+					}
+				} else if (words[0].charAt(0) == 's') { // Cachets
+					String Cac_ida = words[1];
+					String Cac_idr = words[2];
+					String Cac_montant = words[4];
+					LOG.info(Cac_ida+" "+Cac_idr+" "+Cac_montant);
+					context.write(new Text('e'+Cac_ida+" "+'m'+Cac_idr), new Text("Cac"+Cac_montant));
 				}
 			}
 		}
-	}			
-	// SELECT montant, first_name, last_name, age, pays WHERE Salaire.id_employe = Employe.id_employe AND Employe.gender = "Female" ORDER BY montant;
+	}
 
 	// Reducer A
+	// emit(ida+idr, gender+montant+nom)
 	public static class Reduce extends Reducer<Text, Text, Text, Text> {
 		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 			
 			ArrayList<String> values_copy = new ArrayList<String>();
-			for (Text val : values) {
+			for (Text val : values) {	
 				values_copy.add(val.toString());
 			}
 			
-			for (String emp : values_copy) {
-				double sum = 0;	
-				if (emp.startsWith("Emp")) {
-					emp = emp.substring(3);
-					for (String sal : values_copy) {
-						if (sal.startsWith("Sal")) {
-							sal = sal.substring(3);
-							sum += Double.parseDouble(sal);
+			for (String act : values_copy) {
+				if (act.startsWith("Act")) {
+					act = act.substring(3); // gender
+					for (String rol : values_copy) {
+						if (rol.startsWith("Rol")) {
+							rol = rol.substring(3); // nom
+							for (String cac : values_copy) {
+								if (cac.startsWith("Cac")) {
+									cac = cac.substring(3); // montant
+									context.write(key, new Text(";"+act+";"+cac+";"+rol));
+								}
+							}
 						}
 					}
-					context.write(new Text(emp), new Text(";" + String.valueOf(sum)));
 				}
 			}			
 		}
 	}
 	
 	// Mapper B
+	// emit(nom+gender, montant) 
 	public static class MapB extends Mapper<LongWritable, Text, Text, Text> {
 		private final static String emptyWords[] = { "" };
 
@@ -153,30 +177,83 @@ public class A7 {
 		public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 			String line = value.toString(); //pour chaque ligne appel a map
 			String[] words = line.split(";");  // tableau de mots
-			compt++;
 			
 			if (Arrays.equals(words, emptyWords))
 				return;
 
-			if (compt != 1) {
-				String Emp_first_name = words[0];
-				String Emp_last_name = words[1];
-				String Emp_age = words[2];
-				String Emp_pays = words[3];
-				String gain = words[4];
-				context.write(new Text(gain), new Text(Emp_first_name+" "+Emp_last_name+" "+Emp_age+" "+Emp_pays));
-			}
+			String Rol_nom = words[3];
+			String Act_gender = words[1];
+			String Cac_montant = words[2];
+			context.write(new Text(Rol_nom+" "+Act_gender), new Text(Cac_montant));
 		}
 	}
 	
 	// Reducer B
+	// emit(nom+gender, moyenne(montant)+nb_acteur)
 	public static class ReduceB extends Reducer<Text, Text, Text, Text> {
+		
 		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-			for (Text val : values) {
-				context.write(key, val);	
+			Double sum = 0.0;
+			int count = 0;
+			ArrayList<String> values_copy = new ArrayList<String>();
+			
+			for (Text val : values) {	
+				values_copy.add(val.toString());
 			}
+			
+			for (String val : values_copy) {
+				count++;
+				sum += Double.valueOf(val);
+			}
+			LOG.info(key+";"+sum/count+";"+count);
+			context.write(key, new Text(";"+sum/count+";"+count));
 		}
 	}
+	
+	// Mapper C
+	// emit(gender, nom+moyenne(montant)+nb_acteur)
+	public static class MapC extends Mapper<LongWritable, Text, Text, Text> {
+		private final static String emptyWords[] = { "" };
+
+		@Override
+		public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+			String line = value.toString(); //pour chaque ligne appel a map
+			String[] words = line.split(";");  // tableau de mots
+			String nom = words[0].split("\\s")[0];
+			String gender = words[0].split("\\s")[1];
+			
+			if (Arrays.equals(words, emptyWords))
+				return;
+
+//			String Rol_nom = words[3];
+//			String Act_gender = words[1];
+//			String Cac_montant = words[2];
+//			context.write(new Text(Rol_nom+" "+Act_gender), new Text(Cac_montant));
+		}
+	}
+	
+	// Reducer C
+	// emit(gender, nom+moyenne(montant)+nb_acteur)
+	public static class ReduceC extends Reducer<Text, Text, Text, Text> {
+		
+		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+			Double sum = 0.0;
+			int count = 0;
+			ArrayList<String> values_copy = new ArrayList<String>();
+			
+			for (Text val : values) {	
+				values_copy.add(val.toString());
+			}
+			
+//			for (String val : values_copy) {
+//				count++;
+//				sum += Double.valueOf(val);
+//			}
+//			LOG.info(key+";"+sum/count+";"+count);
+//			context.write(key, new Text(";"+sum/count+";"+count));
+		}
+	}
+	
 	
 	// Main
 	public static void main(String[] args) throws Exception {
@@ -205,7 +282,7 @@ public class A7 {
 		
 		// Job B
 		Job jobB = new Job(conf, "B");
-		jobB.setSortComparatorClass(TextComparator.class);
+//		jobB.setSortComparatorClass(TextComparator.class);
 		
 		jobB.setOutputKeyClass(Text.class);
 		jobB.setOutputValueClass(Text.class);

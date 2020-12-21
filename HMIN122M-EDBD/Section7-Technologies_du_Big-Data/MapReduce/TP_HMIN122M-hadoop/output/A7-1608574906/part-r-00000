@@ -1,0 +1,526 @@
+e1 m2	;Female;4119;coiffeur
+e1 m3	;Female;2182;technicien
+e1 m6	;Female;4715;ressources humaines
+e1 m6	;Female;3917;ressources humaines
+e102 m6	;Female;3762;ressources humaines
+e103 m10	;Female;4372;animation
+e103 m8	;Female;4995;accueil
+e104 m5	;Female;3564;maintenance
+e105 m4	;Female;4827;ing�nieur
+e106 m2	;Female;2650;coiffeur
+e106 m8	;Female;2351;accueil
+e107 m10	;Male;2016;animation
+e107 m5	;Male;2553;maintenance
+e107 m8	;Male;3577;accueil
+e107 m9	;Male;3818;marketing
+e109 m7	;Female;3854;logistique
+e109 m8	;Female;2105;accueil
+e11 m6	;Male;3760;ressources humaines
+e110 m6	;Male;2553;ressources humaines
+e111 m2	;Female;2661;coiffeur
+e114 m6	;Male;3385;ressources humaines
+e114 m8	;Male;2722;accueil
+e114 m8	;Male;2572;accueil
+e116 m6	;Female;2729;ressources humaines
+e116 m7	;Female;4360;logistique
+e118 m4	;Male;2301;ing�nieur
+e118 m6	;Male;2588;ressources humaines
+e118 m6	;Male;2806;ressources humaines
+e120 m1	;Female;3559;artiste
+e120 m2	;Female;4276;coiffeur
+e122 m1	;Female;2795;artiste
+e123 m10	;Female;3625;animation
+e123 m2	;Female;3954;coiffeur
+e123 m2	;Female;3212;coiffeur
+e126 m7	;Male;4514;logistique
+e127 m5	;Male;2128;maintenance
+e128 m9	;Female;3701;marketing
+e129 m3	;Female;4113;technicien
+e13 m2	;Female;4494;coiffeur
+e13 m2	;Female;2252;coiffeur
+e130 m7	;Male;4923;logistique
+e131 m10	;Male;3447;animation
+e131 m9	;Male;3594;marketing
+e133 m7	;Female;3684;logistique
+e134 m1	;Male;3076;artiste
+e135 m7	;Male;3075;logistique
+e136 m8	;Male;3846;accueil
+e136 m9	;Male;4020;marketing
+e137 m4	;Female;3715;ing�nieur
+e14 m9	;Female;2723;marketing
+e140 m10	;Male;2913;animation
+e142 m2	;Female;2686;coiffeur
+e142 m7	;Female;4404;logistique
+e144 m1	;Female;2935;artiste
+e146 m3	;Female;4415;technicien
+e148 m10	;Male;3660;animation
+e148 m7	;Male;3540;logistique
+e149 m8	;Male;2279;accueil
+e149 m9	;Male;3476;marketing
+e15 m10	;Female;4417;animation
+e15 m2	;Female;3475;coiffeur
+e15 m3	;Female;3508;technicien
+e15 m4	;Female;2922;ing�nieur
+e150 m3	;Female;4083;technicien
+e153 m2	;Male;3291;coiffeur
+e154 m6	;Female;3956;ressources humaines
+e155 m7	;Male;4074;logistique
+e156 m7	;Female;2461;logistique
+e157 m2	;Male;3553;coiffeur
+e159 m7	;Female;2628;logistique
+e159 m9	;Female;3741;marketing
+e16 m4	;Male;2510;ing�nieur
+e160 m10	;Female;4364;animation
+e161 m9	;Female;4923;marketing
+e161 m9	;Female;3608;marketing
+e162 m2	;Male;4793;coiffeur
+e163 m2	;Female;3880;coiffeur
+e163 m6	;Female;3438;ressources humaines
+e164 m10	;Female;4487;animation
+e165 m4	;Male;2082;ing�nieur
+e165 m9	;Male;3476;marketing
+e168 m2	;Male;3334;coiffeur
+e169 m5	;Male;2662;maintenance
+e17 m3	;Male;3880;technicien
+e17 m6	;Male;2661;ressources humaines
+e17 m7	;Male;4308;logistique
+e170 m10	;Male;3326;animation
+e170 m9	;Male;3348;marketing
+e171 m8	;Male;4266;accueil
+e173 m6	;Female;4147;ressources humaines
+e173 m8	;Female;4071;accueil
+e174 m6	;Male;4320;ressources humaines
+e175 m1	;Female;3128;artiste
+e176 m2	;Male;3062;coiffeur
+e177 m3	;Male;2524;technicien
+e177 m7	;Male;2652;logistique
+e177 m9	;Male;3043;marketing
+e178 m7	;Male;3278;logistique
+e178 m8	;Male;3108;accueil
+e179 m6	;Male;2422;ressources humaines
+e18 m2	;Female;2762;coiffeur
+e18 m3	;Female;2064;technicien
+e18 m5	;Female;3067;maintenance
+e180 m10	;Male;2431;animation
+e180 m4	;Male;4255;ing�nieur
+e181 m4	;Male;2504;ing�nieur
+e181 m8	;Male;3386;accueil
+e182 m8	;Female;2277;accueil
+e183 m3	;Male;2236;technicien
+e183 m6	;Male;2852;ressources humaines
+e185 m4	;Female;3661;ing�nieur
+e185 m9	;Female;3159;marketing
+e187 m7	;Female;3425;logistique
+e189 m10	;Male;4877;animation
+e190 m3	;Female;4305;technicien
+e191 m2	;Female;3738;coiffeur
+e192 m9	;Female;3863;marketing
+e193 m5	;Female;2340;maintenance
+e193 m6	;Female;4111;ressources humaines
+e194 m8	;Female;4615;accueil
+e196 m9	;Female;2280;marketing
+e198 m9	;Male;2351;marketing
+e199 m7	;Male;2574;logistique
+e2 m1	;Male;3884;artiste
+e2 m10	;Male;3613;animation
+e2 m8	;Male;2254;accueil
+e2 m8	;Male;2092;accueil
+e2 m8	;Male;2456;accueil
+e200 m10	;Female;2674;animation
+e200 m6	;Female;2541;ressources humaines
+e204 m4	;Female;4256;ing�nieur
+e204 m8	;Female;3272;accueil
+e205 m1	;Male;2785;artiste
+e205 m8	;Male;3617;accueil
+e206 m7	;Male;4755;logistique
+e207 m1	;Male;3800;artiste
+e208 m1	;Male;2413;artiste
+e208 m3	;Male;4264;technicien
+e21 m10	;Male;2329;animation
+e21 m7	;Male;2949;logistique
+e21 m9	;Male;3826;marketing
+e210 m6	;Female;4042;ressources humaines
+e211 m4	;Female;2961;ing�nieur
+e211 m6	;Female;4863;ressources humaines
+e213 m8	;Female;2653;accueil
+e215 m1	;Female;2721;artiste
+e215 m6	;Female;3243;ressources humaines
+e216 m4	;Female;4110;ing�nieur
+e218 m8	;Male;2340;accueil
+e218 m9	;Male;2088;marketing
+e220 m3	;Male;3525;technicien
+e220 m5	;Male;3386;maintenance
+e220 m9	;Male;2555;marketing
+e221 m5	;Male;4983;maintenance
+e223 m10	;Male;2114;animation
+e223 m6	;Male;2126;ressources humaines
+e225 m8	;Female;4944;accueil
+e228 m2	;Male;4219;coiffeur
+e228 m7	;Male;4225;logistique
+e231 m1	;Male;3848;artiste
+e231 m2	;Male;2186;coiffeur
+e231 m3	;Male;2077;technicien
+e232 m2	;Female;2259;coiffeur
+e234 m9	;Female;3813;marketing
+e235 m3	;Male;2007;technicien
+e235 m3	;Male;3841;technicien
+e235 m5	;Male;4925;maintenance
+e237 m10	;Male;3037;animation
+e237 m7	;Male;2321;logistique
+e238 m1	;Female;4949;artiste
+e238 m10	;Female;3063;animation
+e239 m2	;Male;3971;coiffeur
+e239 m8	;Male;4812;accueil
+e24 m10	;Female;2430;animation
+e240 m1	;Female;3289;artiste
+e241 m2	;Female;4844;coiffeur
+e244 m4	;Female;3146;ing�nieur
+e245 m4	;Male;4620;ing�nieur
+e246 m1	;Male;2527;artiste
+e248 m9	;Female;2020;marketing
+e25 m10	;Male;2128;animation
+e25 m5	;Male;3939;maintenance
+e25 m9	;Male;3054;marketing
+e250 m8	;Female;2610;accueil
+e251 m1	;Male;2961;artiste
+e251 m6	;Male;2993;ressources humaines
+e251 m6	;Male;3932;ressources humaines
+e252 m7	;Female;4538;logistique
+e255 m4	;Male;2669;ing�nieur
+e255 m8	;Male;3394;accueil
+e256 m1	;Female;2362;artiste
+e257 m1	;Female;4311;artiste
+e259 m5	;Male;2310;maintenance
+e26 m3	;Male;2538;technicien
+e26 m9	;Male;3484;marketing
+e261 m4	;Male;4922;ing�nieur
+e261 m6	;Male;3241;ressources humaines
+e261 m7	;Male;4917;logistique
+e262 m6	;Male;3609;ressources humaines
+e264 m3	;Male;3292;technicien
+e264 m8	;Male;2627;accueil
+e265 m7	;Male;2940;logistique
+e266 m1	;Male;2470;artiste
+e266 m6	;Male;4631;ressources humaines
+e266 m6	;Male;4083;ressources humaines
+e267 m9	;Female;3037;marketing
+e268 m3	;Female;2903;technicien
+e269 m8	;Female;3900;accueil
+e272 m2	;Female;2152;coiffeur
+e272 m5	;Female;2414;maintenance
+e274 m9	;Female;4071;marketing
+e275 m4	;Male;4674;ing�nieur
+e275 m8	;Male;2985;accueil
+e277 m2	;Male;3548;coiffeur
+e279 m7	;Male;3036;logistique
+e280 m8	;Male;4126;accueil
+e281 m7	;Female;2841;logistique
+e283 m3	;Male;3829;technicien
+e287 m6	;Male;2653;ressources humaines
+e288 m4	;Female;4795;ing�nieur
+e288 m9	;Female;3658;marketing
+e289 m1	;Female;4862;artiste
+e289 m4	;Female;2486;ing�nieur
+e289 m6	;Female;3498;ressources humaines
+e29 m5	;Female;4525;maintenance
+e290 m6	;Female;2550;ressources humaines
+e291 m3	;Female;2360;technicien
+e291 m7	;Female;4060;logistique
+e293 m10	;Male;4144;animation
+e293 m4	;Male;3145;ing�nieur
+e293 m8	;Male;4702;accueil
+e294 m3	;Female;4059;technicien
+e295 m3	;Female;2337;technicien
+e295 m3	;Female;4793;technicien
+e295 m6	;Female;4585;ressources humaines
+e296 m9	;Male;4318;marketing
+e297 m9	;Male;2392;marketing
+e299 m5	;Male;2518;maintenance
+e3 m3	;Female;2760;technicien
+e3 m5	;Female;2624;maintenance
+e30 m1	;Male;4823;artiste
+e300 m10	;Female;4008;animation
+e301 m5	;Male;4166;maintenance
+e302 m2	;Female;3007;coiffeur
+e303 m10	;Female;3867;animation
+e304 m1	;Female;4956;artiste
+e305 m4	;Male;4980;ing�nieur
+e305 m6	;Male;3164;ressources humaines
+e305 m6	;Male;4562;ressources humaines
+e306 m4	;Female;4369;ing�nieur
+e307 m2	;Male;4357;coiffeur
+e307 m6	;Male;2130;ressources humaines
+e308 m1	;Male;2001;artiste
+e308 m10	;Male;3830;animation
+e308 m10	;Male;3910;animation
+e308 m8	;Male;2187;accueil
+e309 m5	;Male;3577;maintenance
+e309 m6	;Male;2900;ressources humaines
+e309 m7	;Male;2012;logistique
+e31 m3	;Female;4545;technicien
+e31 m9	;Female;2800;marketing
+e310 m1	;Male;2253;artiste
+e310 m1	;Male;4680;artiste
+e311 m9	;Female;2770;marketing
+e312 m6	;Female;4246;ressources humaines
+e315 m3	;Male;3655;technicien
+e319 m5	;Female;3083;maintenance
+e32 m10	;Male;2431;animation
+e320 m9	;Female;2943;marketing
+e322 m6	;Male;4841;ressources humaines
+e323 m10	;Female;2434;animation
+e323 m8	;Female;4135;accueil
+e324 m10	;Male;2329;animation
+e324 m3	;Male;3438;technicien
+e324 m7	;Male;4303;logistique
+e325 m6	;Male;4654;ressources humaines
+e327 m2	;Male;4442;coiffeur
+e329 m3	;Male;2996;technicien
+e331 m8	;Male;4990;accueil
+e332 m1	;Female;4088;artiste
+e333 m10	;Male;4821;animation
+e334 m4	;Male;4962;ing�nieur
+e335 m10	;Male;3853;animation
+e336 m5	;Male;3090;maintenance
+e336 m9	;Male;4940;marketing
+e337 m4	;Female;3996;ing�nieur
+e337 m5	;Female;2799;maintenance
+e339 m6	;Female;3467;ressources humaines
+e34 m10	;Male;2072;animation
+e340 m7	;Male;2504;logistique
+e347 m2	;Female;2806;coiffeur
+e348 m8	;Female;2795;accueil
+e35 m10	;Male;3978;animation
+e351 m1	;Female;2560;artiste
+e351 m2	;Female;3494;coiffeur
+e351 m7	;Female;4433;logistique
+e353 m4	;Male;3537;ing�nieur
+e353 m5	;Male;2661;maintenance
+e353 m7	;Male;4858;logistique
+e354 m6	;Female;2861;ressources humaines
+e354 m8	;Female;4414;accueil
+e359 m9	;Female;3602;marketing
+e361 m10	;Male;2888;animation
+e362 m7	;Female;3799;logistique
+e365 m1	;Female;3886;artiste
+e365 m9	;Female;4492;marketing
+e366 m1	;Male;3058;artiste
+e368 m2	;Male;4690;coiffeur
+e37 m4	;Male;2693;ing�nieur
+e370 m10	;Female;3005;animation
+e370 m3	;Female;2532;technicien
+e371 m1	;Male;3778;artiste
+e371 m6	;Male;3135;ressources humaines
+e372 m1	;Male;3066;artiste
+e372 m5	;Male;4874;maintenance
+e373 m10	;Male;4218;animation
+e373 m7	;Male;3911;logistique
+e375 m6	;Male;3215;ressources humaines
+e375 m8	;Male;3464;accueil
+e378 m3	;Female;3780;technicien
+e379 m5	;Male;2805;maintenance
+e379 m8	;Male;3173;accueil
+e379 m9	;Male;4881;marketing
+e38 m10	;Male;2317;animation
+e381 m2	;Female;4567;coiffeur
+e381 m4	;Female;4141;ing�nieur
+e381 m4	;Female;4932;ing�nieur
+e382 m2	;Female;4889;coiffeur
+e382 m9	;Female;4125;marketing
+e383 m4	;Male;4432;ing�nieur
+e384 m10	;Female;4175;animation
+e385 m7	;Female;3122;logistique
+e385 m9	;Female;3196;marketing
+e387 m3	;Male;3156;technicien
+e389 m6	;Male;4610;ressources humaines
+e393 m4	;Female;3606;ing�nieur
+e394 m7	;Female;2325;logistique
+e394 m7	;Female;4130;logistique
+e395 m4	;Female;2694;ing�nieur
+e395 m4	;Female;4484;ing�nieur
+e396 m3	;Male;4261;technicien
+e396 m8	;Male;4976;accueil
+e397 m1	;Female;4239;artiste
+e398 m5	;Male;4563;maintenance
+e399 m10	;Female;4247;animation
+e399 m6	;Female;4106;ressources humaines
+e4 m1	;Female;2150;artiste
+e4 m2	;Female;3488;coiffeur
+e400 m1	;Female;4115;artiste
+e401 m10	;Male;3323;animation
+e402 m4	;Male;3032;ing�nieur
+e403 m7	;Male;4975;logistique
+e404 m1	;Male;3107;artiste
+e404 m2	;Male;2163;coiffeur
+e404 m2	;Male;3129;coiffeur
+e404 m8	;Male;2471;accueil
+e406 m10	;Male;3714;animation
+e406 m9	;Male;4292;marketing
+e408 m8	;Male;3684;accueil
+e409 m5	;Female;4365;maintenance
+e409 m7	;Female;4100;logistique
+e41 m5	;Female;4131;maintenance
+e41 m9	;Female;2728;marketing
+e410 m10	;Male;2636;animation
+e410 m10	;Male;2152;animation
+e411 m4	;Female;4928;ing�nieur
+e412 m4	;Male;3771;ing�nieur
+e412 m8	;Male;2812;accueil
+e412 m9	;Male;4845;marketing
+e413 m9	;Female;4361;marketing
+e415 m9	;Male;4109;marketing
+e421 m10	;Male;3429;animation
+e422 m1	;Female;4577;artiste
+e422 m10	;Female;4963;animation
+e422 m5	;Female;2868;maintenance
+e423 m7	;Male;3690;logistique
+e424 m9	;Male;3758;marketing
+e426 m7	;Female;4938;logistique
+e426 m9	;Female;2885;marketing
+e429 m5	;Female;2354;maintenance
+e43 m6	;Female;2254;ressources humaines
+e430 m7	;Male;2764;logistique
+e431 m5	;Male;3423;maintenance
+e431 m8	;Male;4335;accueil
+e432 m4	;Male;3664;ing�nieur
+e434 m6	;Female;3012;ressources humaines
+e435 m1	;Male;2505;artiste
+e435 m7	;Male;3450;logistique
+e436 m4	;Male;2759;ing�nieur
+e437 m2	;Male;3807;coiffeur
+e438 m4	;Male;3811;ing�nieur
+e438 m9	;Male;2283;marketing
+e439 m7	;Male;3504;logistique
+e44 m3	;Male;4956;technicien
+e440 m5	;Female;3964;maintenance
+e440 m9	;Female;3209;marketing
+e442 m5	;Male;3923;maintenance
+e442 m8	;Male;4164;accueil
+e444 m2	;Male;4702;coiffeur
+e444 m4	;Male;3766;ing�nieur
+e444 m7	;Male;3823;logistique
+e445 m3	;Female;4573;technicien
+e446 m10	;Male;4563;animation
+e446 m10	;Male;2879;animation
+e446 m2	;Male;4007;coiffeur
+e446 m4	;Male;4746;ing�nieur
+e447 m9	;Female;2371;marketing
+e448 m10	;Male;4772;animation
+e448 m9	;Male;2648;marketing
+e448 m9	;Male;3371;marketing
+e449 m2	;Female;2244;coiffeur
+e45 m8	;Female;2029;accueil
+e451 m8	;Male;4273;accueil
+e454 m8	;Male;4309;accueil
+e456 m3	;Female;2723;technicien
+e457 m10	;Male;4331;animation
+e457 m5	;Male;3716;maintenance
+e458 m4	;Male;3591;ing�nieur
+e458 m8	;Male;4712;accueil
+e459 m1	;Female;4186;artiste
+e46 m3	;Male;3778;technicien
+e46 m3	;Male;4350;technicien
+e460 m2	;Male;2216;coiffeur
+e460 m4	;Male;4824;ing�nieur
+e460 m5	;Male;3995;maintenance
+e462 m10	;Female;3593;animation
+e462 m6	;Female;3473;ressources humaines
+e465 m1	;Male;4698;artiste
+e465 m10	;Male;2436;animation
+e467 m2	;Female;4847;coiffeur
+e468 m7	;Female;2794;logistique
+e469 m10	;Female;4117;animation
+e469 m5	;Female;3927;maintenance
+e47 m3	;Male;2845;technicien
+e47 m9	;Male;2771;marketing
+e470 m1	;Male;2594;artiste
+e470 m10	;Male;4863;animation
+e470 m4	;Male;2966;ing�nieur
+e471 m2	;Male;4710;coiffeur
+e471 m5	;Male;2962;maintenance
+e471 m7	;Male;2669;logistique
+e473 m5	;Female;3868;maintenance
+e474 m1	;Female;3905;artiste
+e475 m7	;Male;2152;logistique
+e476 m10	;Male;2616;animation
+e476 m5	;Male;4300;maintenance
+e477 m4	;Male;2996;ing�nieur
+e479 m2	;Male;4845;coiffeur
+e479 m9	;Male;4730;marketing
+e482 m3	;Male;2616;technicien
+e482 m3	;Male;3654;technicien
+e483 m2	;Female;4059;coiffeur
+e484 m5	;Male;3382;maintenance
+e484 m5	;Male;3401;maintenance
+e485 m6	;Male;3378;ressources humaines
+e486 m10	;Female;2012;animation
+e486 m7	;Female;3772;logistique
+e487 m10	;Male;4779;animation
+e488 m10	;Male;2017;animation
+e488 m4	;Male;4858;ing�nieur
+e489 m3	;Male;4289;technicien
+e49 m10	;Female;2644;animation
+e49 m10	;Female;2276;animation
+e492 m10	;Female;3301;animation
+e493 m5	;Male;2183;maintenance
+e496 m4	;Male;2249;ing�nieur
+e496 m6	;Male;2031;ressources humaines
+e498 m1	;Male;4782;artiste
+e498 m10	;Male;2842;animation
+e50 m7	;Female;4618;logistique
+e50 m7	;Female;4625;logistique
+e50 m8	;Female;2152;accueil
+e500 m7	;Female;4200;logistique
+e500 m8	;Female;3661;accueil
+e51 m2	;Female;4612;coiffeur
+e51 m5	;Female;4018;maintenance
+e51 m8	;Female;3944;accueil
+e52 m6	;Male;2813;ressources humaines
+e53 m8	;Male;4729;accueil
+e54 m8	;Male;2082;accueil
+e55 m1	;Male;2095;artiste
+e55 m2	;Male;4272;coiffeur
+e57 m9	;Female;4003;marketing
+e59 m2	;Male;4460;coiffeur
+e61 m4	;Male;3856;ing�nieur
+e61 m5	;Male;3983;maintenance
+e64 m10	;Female;3474;animation
+e64 m8	;Female;3787;accueil
+e65 m4	;Female;3142;ing�nieur
+e66 m4	;Male;4504;ing�nieur
+e66 m4	;Male;2625;ing�nieur
+e67 m2	;Male;2449;coiffeur
+e69 m1	;Female;2570;artiste
+e69 m3	;Female;4216;technicien
+e7 m1	;Male;4493;artiste
+e7 m9	;Male;3253;marketing
+e78 m5	;Male;2100;maintenance
+e79 m2	;Male;3484;coiffeur
+e8 m4	;Male;3457;ing�nieur
+e82 m5	;Female;3495;maintenance
+e82 m9	;Female;3912;marketing
+e83 m9	;Female;4688;marketing
+e84 m3	;Male;4353;technicien
+e84 m6	;Male;2728;ressources humaines
+e85 m1	;Female;3780;artiste
+e85 m4	;Female;2138;ing�nieur
+e85 m4	;Female;3132;ing�nieur
+e87 m4	;Male;3937;ing�nieur
+e88 m6	;Female;3141;ressources humaines
+e89 m10	;Female;3989;animation
+e89 m8	;Female;3704;accueil
+e9 m3	;Male;3589;technicien
+e9 m3	;Male;4384;technicien
+e91 m3	;Male;4125;technicien
+e93 m3	;Male;2813;technicien
+e93 m9	;Male;4466;marketing
+e94 m8	;Female;2816;accueil
+e95 m10	;Male;2399;animation
+e95 m7	;Male;4102;logistique
+e95 m7	;Male;4025;logistique
+e97 m5	;Female;3938;maintenance
+e98 m4	;Male;3378;ing�nieur
+e98 m6	;Male;2020;ressources humaines
+e98 m8	;Male;2296;accueil
+e99 m2	;Female;2282;coiffeur
+e99 m8	;Female;4514;accueil

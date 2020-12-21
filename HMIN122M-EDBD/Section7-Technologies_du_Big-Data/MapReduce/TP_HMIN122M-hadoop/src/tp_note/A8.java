@@ -138,19 +138,16 @@ public class A8 {
 		public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 			String line = value.toString(); //pour chaque ligne appel a map
 			String[] words = line.split(";");  // tableau de mots
-			compt++;
 			
 			if (Arrays.equals(words, emptyWords))
 				return;
 
-			if (compt != 1) {
-				String Emp_first_name = words[0];
-				String Emp_last_name = words[1];
-				String Emp_age = words[2];
-				String Emp_pays = words[3];
-				String gain = words[4];
-				context.write(new Text(gain), new Text(Emp_first_name+" "+Emp_last_name+" "+Emp_age+" "+Emp_pays));
-			}
+			String Emp_first_name = words[0];
+			String Emp_last_name = words[1];
+			String Emp_age = words[2];
+			String Emp_pays = words[3];
+			String gain = words[4];
+			context.write(new Text(gain), new Text(Emp_first_name+" "+Emp_last_name+" "+Emp_age+" "+Emp_pays));
 		}
 	}
 	

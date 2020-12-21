@@ -155,7 +155,7 @@ public class A3 {
 
 			String mois = words[0];
 			String age = words[1].substring(1);
-			String[] p = mois.split(" ");
+//			String[] p = mois.split(" ");
 			
 			mois = mois.replaceAll("\\s", "");
 			if(age.equals("MAJEUR")) {
@@ -168,7 +168,7 @@ public class A3 {
 	
 	// Reducer B
 	public static class ReduceB3 extends Reducer<LongWritable, Text, Text, Text> {
-		private static String max = "";
+//		private static String max = "";
 		private static final String[] mois = {"janvier","fevrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","decembre"};
 		
 		public void reduce(LongWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {

@@ -1,0 +1,4 @@
+p1,pomme
+p2,poir
+p3,peche
+p4,abricot

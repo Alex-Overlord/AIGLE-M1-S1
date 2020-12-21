@@ -1,0 +1,9 @@
+id_promotion,nom,pourcentage,debut,fin
+p1,TARIF ENFANT,"0,9",,
+p2,TARIF PLEIN,1,,
+p3,MOITIE PRIX,"0,5",,
+p4,NOEL,"0,75",01/12/20,31/12/20
+p5,ANNIVERSAIRE,"0,2",,
+p6,GRATUIE,0,,
+p7,ETE,"0,6",01/07/20,01/12/20
+p8,SURPRISE,"0,7",,

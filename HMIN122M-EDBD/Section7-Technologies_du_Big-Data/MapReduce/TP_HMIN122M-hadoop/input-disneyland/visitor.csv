@@ -1,4 +1,4 @@
-id_visiteur,first_name,last_name,gender,birthday_date,nationality,ETAT
+id_visitor,first_name,last_name,gender,birthday_date,nationality,ETAT
 v1,Robert,Gallacher,Male,23/11/1985,Honduran,majeur
 v2,Moselle,Moulsdale,Female,20/03/1957,Native Hawaiian and Other Pacific Islander (NHPI),majeur
 v3,Sandy,Inett,Male,15/05/2003,Latin American Indian,mineur

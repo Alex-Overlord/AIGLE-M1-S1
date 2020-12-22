@@ -1,4 +1,4 @@
-id_promotion,nom,pourcentage,debut,fin
+id_promotion,name,percentage,start,end
 p1,TARIF ENFANT,"0,9",,
 p2,TARIF PLEIN,1,,
 p3,MOITIE PRIX,"0,5",,

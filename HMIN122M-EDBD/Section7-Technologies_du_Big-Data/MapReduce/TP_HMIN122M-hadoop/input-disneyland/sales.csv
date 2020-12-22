@@ -1,4 +1,4 @@
-fk_visiteur,fk_billet,fk_promotion,date
+id_visitor,id_ticket,id_promotion,date
 494,9,1,03/03/20
 983,6,2,22/05/20
 985,8,2,25/12/20

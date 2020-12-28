@@ -1,0 +1,15 @@
+id_ticket,name,nb_days,nb_parks,tariff
+b1,Ancien Billet MINI,1,1,59.00
+b2,Ancien Billet MINI,1,2,79.00
+b3,Ancien Billet Magic,1,1,79.00
+b4,Ancien Billet Magic,1,2,99.00
+b5,Ancien Billet SUPER MAGIC,1,1,89.00
+b6,Ancien Billet SUPER MAGIC,1,2,109.00
+b7,Billet Guichet,1,1,87.00
+b8,Billet Guichet,1,1,107.00
+b9,Billet SUPER MAGIC PLUS,1,2,89.00
+b10,Ticket Jour J,2,2,89.00
+b11,Ticket Jour J,3,2,102.00
+b12,Billet sejour,4,2,179.00
+b13,Billet sejour,1,1,219.00
+b14,Billet sejour,1,1,259.00

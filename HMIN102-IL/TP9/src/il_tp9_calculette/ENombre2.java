@@ -25,6 +25,6 @@ public class ENombre2 extends EtatCalculette {
 		default:
 			throw new CalculetteUnknownOperator(calc.getOperateur());
 		}
-		return (1);
+		return (2);
 	}
 }

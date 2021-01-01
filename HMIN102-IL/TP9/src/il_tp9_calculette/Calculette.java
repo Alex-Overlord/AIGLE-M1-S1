@@ -28,9 +28,12 @@ public class Calculette {
 	
 	public static void main(String[] args) throws CalculetteException, CalculetteNumberException, CalculetteUnknownOperator {
 		Calculette c = new Calculette();
+		System.out.println("calcul infixé");
 		c.enter("123"); // etat 1 : stocke le nombre 123 dans accumulateur
 		c.enter("plus"); // etat 2 : stocke l'operation à effectuer dans un registre
 		c.enter("234"); // etat 3 : stocke le résultat de l'opération dans accumulateur
+		c.enter("plus");
+		c.enter("1");
 		System.out.println(c.getResult());
 	}
 }

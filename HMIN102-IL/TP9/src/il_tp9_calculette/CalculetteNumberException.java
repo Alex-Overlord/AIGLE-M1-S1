@@ -1,5 +1,6 @@
 package il_tp9_calculette;
 
+@SuppressWarnings("serial")
 public class CalculetteNumberException extends Exception {
 
 	public CalculetteNumberException() {

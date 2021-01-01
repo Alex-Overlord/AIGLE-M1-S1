@@ -1,5 +1,6 @@
 package il_tp9_calculette;
 
+@SuppressWarnings("serial")
 public class CalculetteUnknownOperator extends Exception {
 
 	public CalculetteUnknownOperator() {

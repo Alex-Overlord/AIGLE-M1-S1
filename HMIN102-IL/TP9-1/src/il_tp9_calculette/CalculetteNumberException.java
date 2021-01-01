@@ -1,5 +1,6 @@
 package il_tp9_calculette;
 
+@SuppressWarnings("serial")
 public class CalculetteNumberException extends Exception {
 
 	public CalculetteNumberException() {
@@ -21,8 +22,7 @@ public class CalculetteNumberException extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CalculetteNumberException(String message, Throwable cause, boolean enableSuppression,
-			boolean writableStackTrace) {
+	public CalculetteNumberException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 		// TODO Auto-generated constructor stub
 	}

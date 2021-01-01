@@ -9,6 +9,6 @@ public class ENombre1 extends EtatCalculette {
 		} catch (NumberFormatException e) {
 			throw new CalculetteNumberException(s); 
 		}
-		return (2);
+		return (3);
 	}
 }

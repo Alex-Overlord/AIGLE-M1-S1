@@ -8,6 +8,6 @@ public class EOperateur extends EtatCalculette {
 	
 	public int enter(String s) throws CalculetteException {
 		calc.setOperateur(s);
-		return(3);
+		return(2);
 	}
 }

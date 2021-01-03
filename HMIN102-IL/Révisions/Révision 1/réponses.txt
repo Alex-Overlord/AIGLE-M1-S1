@@ -1,0 +1,38 @@
+// Sujet 2017-2018 session 1 de janvier 2018
+
+// 1. Réutilisation
+
+// 1)
+
+/* - Il s’agit d’un paramétrage par spécialisation. 
+- Il s’agit d’adapter drawDescription à de nouveaux contexte (de nouvelles figures) sans modification ni duplication du code. */
+
+// 2)
+
+/* - Une fonction d’ordre supérieur est une fonction qui est paramétrée une autre fonction. 
+- La méthode drawDescription est paramétrée (dans son corps) par la méthode toString() (qui sera redéfinir pour chaque sous-classe de Figure) */
+
+// 3)
+
+public class Cercle extend Figure {
+	protected Point _centre;
+	protected Double _rayon;
+
+	public Cercle(Point c, Double r) {
+		_centre = c;
+		_rayon = r;
+	} 
+	
+	public String toString() {
+		return "- un cercle de centre: " + _centre + " et rayon " + _rayon;
+	}
+}
+
+// 4)
+
+/* - Il y a une affectation polymorphique implicite à la ligne 3 "contenu = new HashSet<Figure>();". 
+- Il serait possible de définir une spécialisation de la classe Dessin qui utuliserait une spécialisation de la collection Set, autre que HashSet, ceci permettrait d'adapter l'attribut contenu au nouveau contexte d'utilisation. */
+
+// 5)
+/* - Une méthode de test afin de tester la méthode drawDescription de tout les sous-classe de Figure et une autre pour tester celle de Dessin.
+- Une méthode de test afin de tester la méthode add de Dessin (vérifier que les figures sont bien ajouté, qu'il n'y a pas de doublon.

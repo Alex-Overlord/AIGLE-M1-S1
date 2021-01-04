@@ -1,0 +1,30 @@
+2018_session1
+
+2) XPath-Local
+
+Soient A et B des noeuds du document XML, alors :
+
+1. begin/end
+
+- Self(A,B) est vrai ssi (A.begin = B.begin) et (A.end = B.end)
+
+- Child(A,B) est vrai ssi (A.begin = B.parent.begin) and (A.end = B.parent.end)
+
+- ChildAndParent(A,B) est vrai ssi Self(A,B) ou Child(A,B)
+
+- FirstChild(A,B) est vrai ssi (A.begin = B.begin-1)
+
+- AllSiblings(A,B) est vrai ssi (A.parent = B.parent)
+
+- ElseWhere(A,B) est vrai ssi (A.begin != B.begin) or (A.end != B.end)
+
+2. Dewey
+
+- Self(A,B) est vrai ssi Dewey(A) = Dewey(B)
+
+- Child(A,B) est vrai ssi Dewey(B) = Dewey(A).i
+
+- ChildAndParent(A,B) est vrai ssi (Dewey(B) = Dewey(A).i) or (Dewey(B) = Dewey(A))
+
+- FirstChild(A,B) est vrai ssi 
+

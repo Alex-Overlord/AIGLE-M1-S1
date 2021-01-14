@@ -1,0 +1,6 @@
+PP to UPP
+
+- Accès en lecture : e1[e2] -> lw (e1 + 4 * e2)
+- Accès en écriture : e1[e2] := e3 -> sw (e1 + 4 * e2) e3
+- Allocations de tableaux : t[e] -> alloc (4 * e)
+- -e -> 0-e

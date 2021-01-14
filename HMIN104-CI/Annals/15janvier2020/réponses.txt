@@ -1,0 +1,104 @@
+15 janvier 2020
+
+1]
+
+1.
+
+- 5 16 8 4 2 1
+- Durée du vol : 5
+- altitude maximale du vol : 16
+
+2. PP
+
+f(n : integer, N : integer) : integer
+	f := N;
+	i := 0;
+	
+	while i < n do
+		i := i + 1;
+		
+		if pair(f) then
+			f := f / 2
+		else
+			f := 3 * f + 1
+
+3. UPP
+
+f(n, N)
+	f := N;
+	i := 0;
+	
+	while i < n do
+		i := i + 1;
+		
+		if pair(f) then
+			f := f / 2
+		else
+			f := 3 * f + 1
+
+4. RTL
+
+function f(%0, %1) : %2
+var %0, %1, %2, %3, %4, %5, %6, %7
+entry f1
+exit f0
+
+f1 : move %2, %1 -> f2
+f2 : li %3, 1 -> f3
+f3 : slt %4, %3, %3 -> f4
+f4 : blez %4 -> f0, f5
+f5 : addiu %3, %3, 1 -> f6
+f6 : call %5, pair(%2) -> f7
+f7 : blez %5 -> f11, f8
+f8 : li %6, 2 -> f9
+f9 : div %2, %2, %6 -> f10
+f10 : j -> f14
+f11 : li %7, 3 -> f12
+f12 : mul %2, %2, %7 -> f13
+f13 : addiu %2, %2, 1 -> f14
+f14 : j -> f3
+
+5. ERTL
+
+procedure f(2)
+var %0, %1, %2, %3, %4, %5, %6, %7, %8
+entry f1
+exit f0
+
+f1 : newframe -> f2
+f2 : move %8, $ra -> f3
+f3 : move %0, $a0 -> f4
+f4 : move %1, $a1 -> f5
+f5 : move %2, %1 -> f6
+f6 : li %3, 1 -> f7
+f7 : slt %4, %3, %0 -> f8
+f8 : blez %4 -> f21, f9
+f9 : addiu %3, %3, 1 -> f10
+f10 : move $a0, %2 -> f11
+f11 : call pair(1) -> f12
+f12 : move %5, $v0 -> f13
+f13 : blez %5 -> f17, f14
+f14 : li %6, 2 -> f15
+f15 : div %2, %2, %6 -> f16
+f16 : j -> f20
+f17 : li %7, 3 -> f18
+f18 : mul %2, %2, %7 -> f19
+f19 : addiu %2, %2, 1 -> f20
+f20 : j -> f7
+f21 : move $v0, %2 -> f22
+f22 : move $ra, %8 -> f23
+f23 : move $a0, %0 -> f24
+f24 : move $a1, %1 -> f25
+f25 : delframe -> f26
+
+2] 
+
+
+3]
+
+1.
+
+On représente chaque état par un label suivi du traitement de chaque transition sortante à partir de cet état. Les états finaux placent leur identifiant d'état dans le registre r2 dont la valeur est récuprée pour écrire dans le registre r0 avant l'arrêt de la machine.
+
+2.
+
